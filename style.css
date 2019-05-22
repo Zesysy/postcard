@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "cursive";
+  src: url("Cursive\ standard.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "cursive", "Comfortaa", sans-serif;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-indent: 20px;
+  margin-top: 7px;
+  margin-bottom: 0px;
+  color: #342f2f;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 960px;
+  height: 700px;
+  perspective: 1000px;
+  margin-left: 300px;
+  margin-top: 30px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  display: flex;
+  background-color: #f1f1f1;
+  background-repeat: no-repeat;
+  background-size: auto;
+  border: 1px solid #f1f1f1;
+  transform: rotateY(180deg);
+}
+
+.text-position h3 {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.text-position p {
+  margin-left: 20px;
+  width: 550px;
+}
+
+b {
+  margin-left: 350px;
+}
+
+.position-link-stample {
+  display: flex;
+  flex-direction: column;
+}
+
+.position-link-stample img {
+  width: 128px;
+  height: 128px;
+  margin-left: 237px;
+  margin-top: 38px;
+}
+
+.position-link-stample .link-linkedin {
+  position: absolute;
+  margin-left: 93px;
+  margin-top: 332px;
+  font-size: 1.3em;
+}
+
+.position-link-stample .link-github {
+  position: absolute;
+  margin-left: 93px;
+  margin-top: 393px;
+  font-size: 1.3em;
+}
+
+.position-line {
+  margin-top: 130px;
+}
+
+.line {
+  margin-top: 60px;
+  margin-left: 70px;
+  width: 300px;
+}
