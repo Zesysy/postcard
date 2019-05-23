@@ -44,6 +44,8 @@ p {
 .flip-card:hover .flip-card-inner {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
 }
 
 .flip-card-front,
@@ -65,6 +67,8 @@ p {
   border: 1px solid #f1f1f1;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
 }
 
 .text-position h3 {
