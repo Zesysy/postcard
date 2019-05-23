@@ -20,8 +20,9 @@ p {
 
 .flip-card {
   background-color: transparent;
-  width: 960px;
+  width: 1000px;
   height: 700px;
+  -webkit-perspective: 1000px;
   perspective: 1000px;
   margin-left: 300px;
   margin-top: 30px;
@@ -31,11 +32,17 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
+  -webkit-transition: -webkit-transform 0.9s;
+  transition: -webkit-transform 0.9s;
+  -o-transition: transform 0.9s;
   transition: transform 0.9s;
+  transition: transform 0.9s, -webkit-transform 0.9s;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
 .flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -44,41 +51,54 @@ p {
   position: absolute;
   width: 100%;
   height: 100%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .flip-card-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #f1f1f1;
   background-repeat: no-repeat;
   background-size: auto;
   border: 1px solid #f1f1f1;
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
 .text-position h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 20px;
   margin-bottom: 10px;
 }
 
 .text-position p {
   margin-left: 20px;
-  width: 550px;
+  width: 600px;
 }
 
 b {
   margin-left: 350px;
+  font-size: 1.1em;
 }
 
 .position-link-stample {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .position-link-stample img {
   width: 128px;
   height: 128px;
-  margin-left: 237px;
+  margin-left: 230px;
   margin-top: 38px;
 }
 
@@ -102,6 +122,6 @@ b {
 
 .line {
   margin-top: 60px;
-  margin-left: 70px;
-  width: 300px;
+  margin-left: 55px;
+  width: 280px;
 }
